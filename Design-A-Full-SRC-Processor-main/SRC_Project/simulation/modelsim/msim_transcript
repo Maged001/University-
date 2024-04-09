@@ -1,0 +1,569 @@
+# Reading pref.tcl
+# do CPU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/Controlunitlogic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:32 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/Controlunitlogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Controlunitlogic
+# -- Compiling architecture rtl of Controlunitlogic
+# End time: 02:53:32 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/Control_Step_Decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:32 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/Control_Step_Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Control_Step_Decoder
+# -- Compiling architecture rtl of Control_Step_Decoder
+# End time: 02:53:32 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/counter_4bit_L.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:32 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/counter_4bit_L.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter_4bit_L
+# -- Compiling architecture rtl of counter_4bit_L
+# End time: 02:53:32 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/D_Flip_Flop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:32 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/D_Flip_Flop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity D_Flip_Flop
+# -- Compiling architecture rtl of D_Flip_Flop
+# End time: 02:53:32 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/D_Flip_Flop_Load.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:32 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/D_Flip_Flop_Load.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity D_Flip_Flop_Load
+# -- Compiling architecture rtl of D_Flip_Flop_Load
+# End time: 02:53:32 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/D_Flip_Flop_load_32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:32 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/D_Flip_Flop_load_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity D_Flip_Flop_load_32
+# -- Compiling architecture rtl of D_Flip_Flop_load_32
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/JK_Flip_Flop.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/JK_Flip_Flop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity JK_Flip_Flop
+# -- Compiling architecture rtl of JK_Flip_Flop
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/op_code_decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/op_code_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity op_code_decoder
+# -- Compiling architecture rtl of op_code_decoder
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/step_generator.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/step_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity step_generator
+# -- Compiling architecture rtl of step_generator
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/clocking_logic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/clocking_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clocking_logic
+# -- Compiling architecture rtl of clocking_logic
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/control_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture control_unit_arch of control_unit
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/half_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/half_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity half_adder
+# -- Compiling architecture rtl of half_adder
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/fullAdder_struct.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/fullAdder_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fullAdder_struct
+# -- Compiling architecture rtl of fullAdder_struct
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/adder_32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/adder_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_32
+# -- Compiling architecture rtl of adder_32
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/Buffer_C.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/Buffer_C.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Buffer_C
+# -- Compiling architecture rtl of Buffer_C
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/Buffer_32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/Buffer_32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Buffer_32
+# -- Compiling architecture rtl of Buffer_32
+# End time: 02:53:33 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/R_shift.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:33 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/R_shift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity R_shift
+# -- Compiling architecture rtl of R_shift
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/L_shift.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/L_shift.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity L_shift
+# -- Compiling architecture rtl of L_shift
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/adderALU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/adderALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity adderALU
+# -- Compiling architecture rtl of adderALU
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/logic_gate.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/logic_gate.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity logic_gate
+# -- Compiling architecture rtl of logic_gate
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/A_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/A_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity A_register
+# -- Compiling architecture rtl of A_register
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/C_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/C_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity C_register
+# -- Compiling architecture rtl of C_register
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu
+# -- Compiling architecture rtl of alu
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/shift_counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/shift_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_counter
+# -- Compiling architecture rtl of shift_counter
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC
+# -- Compiling architecture rtl of PC
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/decoder_5to32.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:34 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/decoder_5to32.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_5to32
+# -- Compiling architecture rtl of decoder_5to32
+# End time: 02:53:34 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/decoder_3to8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/decoder_3to8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_3to8
+# -- Compiling architecture rtl of decoder_3to8
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/register_file.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/condition.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/condition.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity condition
+# -- Compiling architecture rtl of condition
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/memory_interface.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/memory_interface.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_interface
+# -- Compiling architecture memory_interface_arch of memory_interface
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/instruction_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/instruction_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity instruction_register
+# -- Compiling architecture instruction_register_arch of instruction_register
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/data_path.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/data_path.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity data_path
+# -- Compiling architecture data_path_arch of data_path
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/CPU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:35 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/CPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU
+# -- Compiling architecture rtl of CPU
+# End time: 02:53:35 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:36 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity memory
+# -- Compiling architecture rtl of memory
+# End time: 02:53:36 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/ITCE364 Quartus/P/src.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 02:53:36 on Dec 29,2022
+# vcom -reportprogress 300 -2008 -work work C:/ITCE364 Quartus/P/src.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity src
+# -- Compiling architecture rtl of src
+# End time: 02:53:36 on Dec 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.src
+# vsim work.src 
+# Start time: 02:53:38 on Dec 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.src(rtl)
+# Loading work.cpu(rtl)
+# Loading work.control_unit(control_unit_arch)
+# Loading work.step_generator(rtl)
+# Loading ieee.numeric_std(body)
+# Loading work.counter_4bit_l(rtl)
+# Loading work.control_step_decoder(rtl)
+# Loading work.clocking_logic(rtl)
+# Loading work.jk_flip_flop(rtl)
+# Loading work.d_flip_flop(rtl)
+# Loading work.op_code_decoder(rtl)
+# Loading work.controlunitlogic(rtl)
+# Loading work.data_path(data_path_arch)
+# Loading work.register_file(rtl)
+# Loading work.decoder_5to32(rtl)
+# Loading work.d_flip_flop_load_32(rtl)
+# Loading work.d_flip_flop_load(rtl)
+# Loading work.buffer_32(rtl)
+# Loading work.buffer_c(rtl)
+# Loading work.alu(rtl)
+# Loading work.a_register(rtl)
+# Loading work.c_register(rtl)
+# Loading work.r_shift(rtl)
+# Loading work.l_shift(rtl)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.adderalu(rtl)
+# Loading work.adder_32(rtl)
+# Loading work.fulladder_struct(rtl)
+# Loading work.half_adder(rtl)
+# Loading work.logic_gate(rtl)
+# Loading work.pc(rtl)
+# Loading work.condition(rtl)
+# Loading work.decoder_3to8(rtl)
+# Loading work.instruction_register(instruction_register_arch)
+# Loading work.memory_interface(memory_interface_arch)
+# Loading work.shift_counter(rtl)
+# Loading work.memory(rtl)
+# ** Warning: Design size of 54083 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+add wave -position insertpoint sim:/src/*
+force -freeze sim:/src/MASTER_CLOCK 0 0, 1 {50 ps} -r 100
+force -freeze sim:/src/MASTER_RESET 0 0
+force -freeze sim:/src/MASTER_START 1 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /src/mem
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /src/mem
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 5  Instance: /src/cpunit/dp/ALUL/add
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: Design size of 65817 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+force -freeze sim:/src/MASTER_CLOCK 0 0, 1 {50 ps} -r 100
+force -freeze sim:/src/MASTER_RESET 0 0
+force -freeze sim:/src/MASTER_START 1 0
+force -freeze sim:/src/ma 00000000000000000000000000000000 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 3  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 5  Instance: /src/cpunit/dp/ALUL/add
+force -freeze sim:/src/r 1 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 150 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 350 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+force -freeze sim:/src/done 1 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ps  Iteration: 7  Instance: /src/cpunit/dp/ALUL/add
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+force -freeze sim:/src/ma 00000000000000000000000000000001 0
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 950 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1050 ps  Iteration: 7  Instance: /src/cpunit/dp/ALUL/add
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1250 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+force -freeze sim:/src/ma 00000000000000000000000000000001 0
+force -freeze sim:/src/ma 00000000000000000000000000000010 0
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1550 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1550 ps  Iteration: 8  Instance: /src/cpunit/dp/ALUL/add
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ps  Iteration: 8  Instance: /src/cpunit/dp/ALUL/add
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1750 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1850 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+force -freeze sim:/src/ma 00000000000000000000000000000011 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2050 ps  Iteration: 5  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2050 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2050 ps  Iteration: 6  Instance: /src/cpunit/dp/ALUL/add
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2150 ps  Iteration: 5  Instance: /src/cpunit/dp/ALUL/add
+run
+run
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2550 ps  Iteration: 5  Instance: /src/cpunit/dp/ALUL/add
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2550 ps  Iteration: 5  Instance: /src/cpunit/dp/ALUL/add
+run
+run
+# End time: 02:55:46 on Dec 29,2022, Elapsed time: 0:02:08
+# Errors: 0, Warnings: 26

@@ -1,0 +1,41 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/Controlunitlogic.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/Control_Step_Decoder.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/counter_4bit_L.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/D_Flip_Flop.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/D_Flip_Flop_Load.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/D_Flip_Flop_load_32.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/JK_Flip_Flop.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/op_code_decoder.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/step_generator.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/clocking_logic.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/control_unit.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/half_adder.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/fullAdder_struct.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/adder_32.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/Buffer_C.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/Buffer_32.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/R_shift.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/L_shift.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/adderALU.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/logic_gate.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/A_register.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/C_register.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/alu.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/shift_counter.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/PC.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/decoder_5to32.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/decoder_3to8.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/register_file.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/condition.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/memory_interface.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/instruction_register.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/data_path.vhd}
+vcom -2008 -work work {C:/Users/Maged Al Jashoobi/OneDrive/Desktop/SRC/CPU.vhd}
+
