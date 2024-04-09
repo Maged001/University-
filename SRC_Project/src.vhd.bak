@@ -1,0 +1,62 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity src is
+end src;
+
+architecture rtl of src is
+  component clock
+    port (
+      master_clock : out std_logic;
+      reset        : out std_logic;
+      start        : out std_logic
+      );
+  end component;
+  
+  component CPU
+    port (
+      master_clock : in    std_logic;
+      start        : in    std_logic;
+      reset        : in    std_logic;
+      m_done       : in    std_logic;
+      md_read      : in    std_logic;
+      md_write     : in    std_logic;
+      r            : out   std_logic;
+      w            : out   std_logic;
+      ma           : out   std_logic_vector(31 downto 0);
+      md           : inout std_logic_vector(31 downto 0)
+      );
+  end component;
+  
+  component memory
+    port (
+      reset    : in    std_logic;
+      m_done   : out   std_logic;
+      md_read  : out   std_logic;
+      md_write : out   std_logic;
+      r        : in    std_logic;
+      w        : in    std_logic;
+      ma       : in    std_logic_vector(31 downto 0);
+      md       : inout std_logic_vector(31 downto 0)
+      );
+  end component;
+  
+  signal master_clock : std_logic;
+  signal m_done       : std_logic;
+  signal md_read      : std_logic;
+  signal md_write     : std_logic;
+  signal r            : std_logic;
+  signal w            : std_logic;
+  signal ma           : std_logic_vector(31 downto 0);
+  signal md           : std_logic_vector(31 downto 0);
+  signal reset        : std_logic;
+  signal start        : std_logic;
+
+begin  
+
+  clk : clock port map ( master_clock, reset, start );
+  cpunit : cpu port map ( master_clock, start, reset, m_done, md_read,
+                          md_write, r, w, ma, md );
+  mem : memory port map ( reset, m_done, md_read, md_write, r, w, ma, md );
+
+end rtl;

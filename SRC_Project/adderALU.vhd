@@ -1,0 +1,83 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity adderALU is
+  port (
+    a    : in  std_logic_vector(31 downto 0);  
+    b    : in  std_logic_vector(31 downto 0);  
+    c    : out std_logic_vector(31 downto 0); 
+    inc4 : in  std_logic;             
+    add  : in  std_logic;               
+    sub  : in  std_logic;               
+    pass : in  std_logic;               
+    inv  : in  std_logic;
+	 neg  : in  std_logic
+	 
+    );
+end adderALU;
+
+architecture rtl of adderALU is
+
+	component adder_32 is
+   port (
+    a     : in  std_logic_vector(31 downto 0);  
+    b     : in  std_logic_vector(31 downto 0); 
+    c_in  : in  std_logic;              
+    s     : out std_logic_vector(31 downto 0);
+	 c_out: out std_logic	 
+    );
+	end component;
+	
+	
+	component Buffer_32 is
+   port (
+    input  : in  std_logic_vector(31 downto 0);  
+    output : out std_logic_vector(31 downto 0);  
+    enable : in  std_logic              
+    );
+	end component;
+
+  
+  signal a_sig  : std_logic_vector(31 downto 0);
+  signal b_sig  : std_logic_vector(31 downto 0);
+  signal sum    : std_logic_vector(31 downto 0);
+  signal b_inv  : std_logic;
+  signal add_E  : std_logic;
+  signal n_inc4 : std_logic;
+  signal temp   : std_logic_vector(31 downto 0);
+  
+begin  
+
+  n_inc4 <= not inc4;
+  add_by_4: process (a, n_inc4,inc4)
+  begin
+    for i in 3 to 31 loop
+      a_sig(i) <= a(i) and n_inc4;
+    end loop;  -- i
+    a_sig(2) <= a(2) or inc4;
+    a_sig(1) <= a(1) and n_inc4;
+    a_sig(0) <= a(0) and n_inc4;
+  end process add_by_4;
+
+  b_inv <= sub or inv or neg;
+  
+  process (b(31 downto 0), b_inv)
+  begin  
+    for i in 0 to 31 loop
+      b_sig(i) <= b(i) xor b_inv;
+    end loop;  -- i
+  end process;
+  
+  add_E <= inc4 or add or sub;
+  
+  temp <= b_sig + neg;
+
+  
+  add_32		  : adder_32  port map ( a_sig, b_sig, sub , sum );
+  buf_add     : Buffer_32 port map ( sum  , c    , add_E     );
+  buf_inv     : Buffer_32 port map ( b_sig, c    , inv       );
+  buf_neg     : Buffer_32 port map ( temp , c    , neg       );
+  buf_pass    : Buffer_32 port map ( b    , c    , pass      );
+
+end rtl;

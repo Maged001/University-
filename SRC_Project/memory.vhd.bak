@@ -1,0 +1,129 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity memory is
+  port (
+	 clock    : in    std_logic;
+    reset    : in    std_logic;        
+    m_done   : out   std_logic;         
+    md_read  : out   std_logic;         
+    md_write : out   std_logic;         
+    r        : in    std_logic;         
+    w        : in    std_logic;         
+    ma       : in    std_logic_vector(31 downto 0);
+    md       : inout std_logic_vector(31 downto 0)  
+);
+end memory;
+
+
+architecture memory_arch of memory is
+
+
+type ram_array is array (0 to 63) of std_logic_vector (7 downto 0);
+signal ram_data: ram_array :=(
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000", 
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000", 
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000", 
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000", 
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000",
+ "00000000" 
+); 
+	
+signal ma_integer: integer range 0 to 65;
+
+begin
+
+ma_integer <= CONV_INTEGER(ma); 
+
+process(clock,reset,r,w)
+begin 
+
+if reset = '1' then 
+ md <= "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+ m_done   <= '0';
+ md_read  <= '0';
+ md_write <= '0';
+ 
+elsif(rising_edge(clock)) then
+		if(w ='1') then
+			ram_data(ma_integer  ) <= md(31 downto 24);
+			ram_data(ma_integer+1) <= md(23 downto 16);
+			ram_data(ma_integer+2) <= md(15 downto  8);
+			ram_data(ma_integer+3) <= md(7  downto  0);
+		end if;
+elsif(rising_edge(clock)) then
+		if(r ='1') then
+			md(31 downto 24) <= ram_data(ma_integer  );
+			md(23 downto 16) <= ram_data(ma_integer+1);
+			md(15 downto  8) <= ram_data(ma_integer+2);
+			md(7  downto  0) <= ram_data(ma_integer+3);
+		end if;
+end if;
+  m_done <= r or w;
+  md_read <= r;
+  md_write <= w;
+end process;
+
+
+end memory_arch;
