@@ -1,2 +1,2 @@
-# Shortest-Remaining-Time-First-Preemptive-SJF-
-Shortest-Remaining-Time-First (Preemptive SJF)
+# CPU Priority Scheduling-preemptive
+CPU Priority Scheduling-preemptive
